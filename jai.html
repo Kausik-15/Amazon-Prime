@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha12-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./jai.css">
+    <title>Prime Video</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><span style="color: rgb(0, 191, 255);">prime
+                </span>video</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu" href="" role="button"
+                            data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./movies.html">Movies</a></li>
+                            <li><a class="dropdown-item" href="./tv.html">Tv Shows</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu" href="#" role="button"
+                            data-bs-toggle="dropdown">Store</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./view.html">View Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu" href="#" role="button"
+                            data-bs-toggle="dropdown">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./action.html">Action</a></li>
+                            <li><a class="dropdown-item" href="./drama.html">Drama</a></li>
+                            <li><a class="dropdown-item" href="./comedy.html">Comedy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary button" type="button">Search</button>
+                </form>
+
+                <!-- Language Box
+                <div class="dropdown ms-3 language">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Bengali</a></li>
+                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                        <li><a class="dropdown-item" href="#">Telegu</a></li>
+                        <li><a class="dropdown-item" href="#">Kanada</a></li>
+                        <li><a class="dropdown-item" href="#">Tamil</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Banner -->
+    <div class="ban">
+        <div class="banrap">
+            <div class="write">
+                <h2>Jai Bhim (Hindi)</h2>
+                <p>A pregnant woman from a primitive tribal community, searches desperately for her husband, who is
+                    missing from police custody. So as to find her husband and seek justice for them, as their voice, a
+                    High Court advocate rises in support. Will their battle for justice succeed?</p>
+                <p class="rating">IMDb 8.8 2h 31min 2021</p>
+                <p class="comedy">Drama ~ Serious</p>
+                <button>
+                    <b><a href="#">Watch with prime<br>Start your 30-day free trial</a></b>
+                </button>
+                <div class="rent">
+                    <button>
+                        <b><a href="">Rent ₹279</a></b>
+                    </button>
+                </div>
+            </div>
+            <button id="showModalBtn" class="btn2">More Payment Option</button>
+
+            <div id="paymentModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h2>If You Want To Play Full Movie Then Subscribe Our Channel</h2>
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="Kausik Saha">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2026">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="555">
+
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="sameadr"> Accept Terms & Condition
+                        </label>
+                        <input type="submit" value="Continue to payment" class="button1">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Trigger button -->
+            <button onclick="openPopup()" class="btn1"><i class="fa fa-play" aria-hidden="true"></i></button>
+
+            <!-- Video popup overlay -->
+            <div id="overlay">
+                <div id="video-container">
+                    <span id="close-btn" onclick="closePopup()">x</span>
+                    <video controls>
+                        <source src="./Jaibhim Trailer.mp4" autoplay loop>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Card Carousel 1 -->
+    <div class="container-fluid owl">
+        <h1 class="text-center mb-5 owlrap"><span style="color: rgb(0, 191, 255);">Prime
+            </span> Top-rated movies on IMDb</h1>
+        <div class="row">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                    <div class="item mb-4">
+                        <div class="card border-0 shadow">
+                            <a href="./shershah.html"><img src="shershah.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Shershah 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./Lord.html"><img src="Lord.png" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Lord Of The Rings 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./top.html"><img src="top.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Top Gun Maverick 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./jawan.html"><img src="jawan1.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Jawan 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./3idiots.html"><img src="3 idiots.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>3 Idiots 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./jai.html"><img src="jaibhim.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Jai Bhim 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="sita.html"><img src="sita.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Sita Ramam 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Card Carousel 2 -->
+    <div class="container-fluid owl">
+        <h1 class="text-center mb-5 owlrap"><span style="color: rgb(0, 191, 255);">Prime
+            </span> Drama movies</h1>
+        <div class="row">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                    <div class="item mb-4">
+                        <div class="card border-0 shadow">
+                            <a href="./padmavat.html"><img src="padmaavat.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Padmaavat 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./pushpa.html"><img src="pushpa.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Pushpa Part One 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./my.html"><img src="My fault.jpeg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>My Fault 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./mr.html"><img src="mr chatterjee.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Mr Chatterjee Vs Norway 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./bawal.html"><img src="bawal.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Bawal 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./gheriyaan.html"><img src="gehraiyaan.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Gehraiyaan 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./bhola.html"><img src="bhola.jpg" alt="" class="card-img-top"></a>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Bholaa 🖤</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+
+
+
+
+
+
+
+    <script>
+        document.getElementById('showModalBtn').addEventListener('click', function () {
+            document.getElementById('paymentModal').style.display = 'block';
+        });
+
+        document.getElementById('closeModal').addEventListener('click', function () {
+            document.getElementById('paymentModal').style.display = 'none';
+        });
+
+        // Close the modal if the user clicks outside the modal content
+        window.addEventListener('click', function (event) {
+            var modal = document.getElementById('paymentModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+
+
+
+
+
+
+    <script>
+        // Function to open the video popup
+        function openPopup() {
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        // Function to close the video popup
+        function closePopup() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footerrap">
+            <div class="icon">
+                <img src="./prime.png" alt="">
+                <h1>© Copyrights prime video.All rights reserved</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
